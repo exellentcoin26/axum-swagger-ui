@@ -38,7 +38,7 @@ const SWAGGER_UI_TEMPLATE: &str = r#"
 "#;
 
 /// Returns the HTML for the Swagger UI page.
-pub fn swagger_ui(spec_url: &'static str) -> String {
+pub fn swagger_ui(spec_url: &str) -> String {
     SWAGGER_UI_TEMPLATE
         .replace("{:index_style}", INDEX_STYLE)
         .replace("{:spec_url}", spec_url)
